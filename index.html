@@ -1,57 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Tab Warning Example</title>
-    <script>
-      window.addEventListener("blur", function() {
-        alert("Warning: You have left the page!");
-      });
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Product Page</title>
   </head>
   <body>
-    <h1>Welcome to my website</h1>
-    <p>Feel free to explore, but don't forget to come back!</p>
-    <fieldset>
-            <legend>Who is the Prime Minister of India?</legend>
-            <label
-              ><input
-                id="indoor"
-                type="radio"
-                name="indoor-outdoor"
-                value="indoor"
-                checked
-              />
-              Indoor</label
-            >
-            <label
-              ><input
-                id="outdoor"
-                type="radio"
-                name="indoor-outdoor"
-                value="outdoor"
-              />
-              Outdoor</label
-            >
-          </fieldset>
-          <fieldset>
-            <legend>What's your cat's personality?</legend>
-            <input
-              id="loving"
-              type="checkbox"
-              name="personality"
-              value="loving"
-              checked
-            />
-            <label for="loving">Loving</label>
-            <input id="lazy" type="checkbox" name="personality" value="lazy" />
-            <label for="lazy">Lazy</label>
-            <input
-              id="energetic"
-              type="checkbox"
-              name="personality"
-              value="energetic"
-            />
-            <label for="energetic">Energetic</label>
-          </fieldset>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/cart">Cart</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="product">
+        <img src="product-image.jpg" alt="Product Image" />
+        <div class="details">
+          <h1>Product Name</h1>
+          <p class="price">$99.99</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            dapibus, ipsum id pharetra scelerisque, tortor risus efficitur
+            sapien, ut blandit lacus felis sed neque.
+          </p>
+          <button>Add to Cart</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 Ecommerce Website. All rights reserved.</p>
+    </footer>
   </body>
 </html>
+v
